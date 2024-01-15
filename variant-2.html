@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Menu Accordion Ilia Landar</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="title">Меню акордион:</h1>
+			<nav class="page-nav">
+				<ul class="page-nav__list">
+					<li class="page-nav__item">
+						<a href="index.html" class="page-nav__link">Houme</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-1.html" class="page-nav__link">GPT</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-2.html" class="page-nav__link">Ilia Landar</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-1.html" class="page-nav__link"></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<h1>Menu Accordion Ilia Landar</h1>
+
+		<style>
+			.accordion {
+				border: 1px solid red;
+				padding: 10px;
+				display: inline-flex;
+				cursor: pointer;
+			}
+
+			.content {
+				max-height: 0;
+				overflow: hidden;
+				transition: 0.5s ease-in-out;
+			}
+		</style>
+
+		<div class="accordion">Button 1</div>
+		<div class="content">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dignissimos
+			repellendus earum doloribus corrupti esse dolorum optio aperiam eius
+			voluptate dicta voluptates in voluptas sunt inventore laudantium. Modi,
+			porro? Voluptate.
+		</div>
+		<div class="accordion">Button 2</div>
+		<div class="content">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dignissimos
+			repellendus earum doloribus corrupti esse dolorum optio aperiam eius
+			voluptate dicta voluptates in voluptas sunt inventore laudantium. Modi,
+			porro? Voluptate.
+		</div>
+		<div class="accordion">Button 3</div>
+		<div class="content">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dignissimos
+			repellendus earum doloribus corrupti esse dolorum optio aperiam eius
+			voluptate dicta voluptates in voluptas sunt inventore laudantium. Modi,
+			porro? Voluptate.
+		</div>
+
+		<script>
+			document.querySelectorAll('.accordion').forEach(el =>
+				el.addEventListener('click', () => {
+					let content = el.nextElementSibling
+
+					if (content.style.maxHeight) {
+						document
+							.querySelectorAll('.content')
+							.forEach(el => (el.style.maxHeight = null))
+					} else {
+						document
+							.querySelectorAll('.content')
+							.forEach(el => (el.style.maxHeight = null))
+						content.style.maxHeight = content.scrollHeight + 'px'
+					}
+				})
+			)
+		</script>
+	</body>
+</html>

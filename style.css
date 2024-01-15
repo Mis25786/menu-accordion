@@ -1,0 +1,29 @@
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+}
+
+.title {
+}
+
+.page-nav {
+}
+
+.page-nav__list {
+	display: flex;
+	gap: 20px;
+}
+
+.page-nav__item {
+}
+
+.page-nav__link {
+}
+
+/* ================================================================ */
