@@ -21,11 +21,19 @@
 						<a href="variant-2.html" class="page-nav__link">Ilia Landar</a>
 					</li>
 					<li class="page-nav__item">
-						<a href="variant-1.html" class="page-nav__link"></a>
+						<a href="variant-3.html" class="page-nav__link">Frilancer</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-4.html" class="page-nav__link">HTML CSS v-1</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-5.html" class="page-nav__link">HTML CSS JS</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
+
+		<h1>HTML CSS JS</h1>
 
 		<style>
 			/* Style the menu items and hide content by default */
@@ -82,7 +90,6 @@
 			document.querySelectorAll('.accordion-header').forEach(header => {
 				header.addEventListener('click', () => {
 					const item = header.parentNode
-					console.log('🚀 ~ header.addEventListener ~ item:', item)
 					const content = item.querySelector('.accordion-content')
 					content.style.display =
 						content.style.display === 'none' ? 'block' : 'none'

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Menu Accordion Frilancer</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="title">Меню акордион:</h1>
+			<nav class="page-nav">
+				<ul class="page-nav__list">
+					<li class="page-nav__item">
+						<a href="index.html" class="page-nav__link">Houme</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-1.html" class="page-nav__link">GPT</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-2.html" class="page-nav__link">Ilia Landar</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-3.html" class="page-nav__link">Frilancer</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-4.html" class="page-nav__link">HTML CSS v-1</a>
+					</li>
+					<li class="page-nav__item">
+						<a href="variant-5.html" class="page-nav__link">HTML CSS JS</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<h1>Frilancer HTML CSS jQuery</h1>
+
+		<div class="block__box-wrap one">
+			<div class="block__box-item">
+				<div class="block__box-title">
+					Заголовок №1
+					<div class="block__box-text">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+						voluptatum in tempore dolore iusto nulla eveniet rerum nostrum
+						cupiditate deleniti eaque, quo nam aut deserunt, velit iure magni
+						exercitationem corporis?
+					</div>
+				</div>
+			</div>
+
+			<div class="block__box-item">
+				<div class="block__box-title">
+					Заголовок №2
+					<div class="block__box-text">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+						voluptatum in tempore dolore iusto nulla eveniet rerum nostrum
+						cupiditate deleniti eaque, quo nam aut deserunt, velit iure magni
+						exercitationem corporis?
+					</div>
+				</div>
+			</div>
+
+			<div class="block__box-item">
+				<div class="block__box-title">
+					Заголовок №3
+					<div class="block__box-text">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+						voluptatum in tempore dolore iusto nulla eveniet rerum nostrum
+						cupiditate deleniti eaque, quo nam aut deserunt, velit iure magni
+						exercitationem corporis?
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <script
+			src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous"
+		></script> -->
+		<!-- <script
+			src="https://code.jquery.com/jquery-migrate-3.4.1.js"
+			integrity="sha256-CfQXwuZDtzbBnpa5nhZmga8QAumxkrhOToWweU52T38="
+			crossorigin="anonymous"
+		></script> -->
+		<script
+			src="https://code.jquery.com/jquery-2.2.4.js"
+			integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+			crossorigin="anonymous"
+		></script>
+		<!-- <script
+			src="https://code.jquery.com/jquery-1.12.4.js"
+			integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+			crossorigin="anonymous"
+		></script> -->
+		<script>
+			$(document).ready(function () {
+				$('.block__box-title').click(function (event) {
+					if ($('.block__box-wrap').hasClass('one')) {
+						$('block__box-title').not($(this)).removeClass('active')
+						$('block__box-text').not($(this).next()).slideUp(300)
+					}
+					$(this).toggleClass('active').next().slideToggle(300)
+				})
+			})
+		</script>
+		<!-- <script src="main.js"></script> -->
+	</body>
+</html>
